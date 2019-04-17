@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="insertCode"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@grabzit/js@3.3.0/grabzit.min.js"></script>
+    <script>
+      let generateImg = "";
+      GrabzIt("ZTQ2MjNkNzNlZTExNDI3ODg2Yzg5NmQ0MzhlZmRjOTM=")
+        .ConvertURL("http://www.google.com", {
+          onFinish(id) {
+            // window.open(
+            //   `http://api.grabz.it/services/getjspicture.ashx?id=${id}`
+            // );
+            generateImg = `http://api.grabz.it/services/getjspicture.ashx?id=${id}`;
+          }
+        })
+        .AddTo("insertCode");
+      debugger;
+    </script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
