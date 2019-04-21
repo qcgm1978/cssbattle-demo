@@ -1,0 +1,15 @@
+<textarea placeholder="code some css"></textarea>
+<div id="app" v-bind:style="styleObject"></div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            styleObject: {
+                width: '400px',
+                height: '300px',
+                background: 'hotpink'
+            }
+        }
+    })
+</script>
