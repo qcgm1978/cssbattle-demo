@@ -1,0 +1,48 @@
+<a></a><b></b>
+<c></c>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F5D6B4;
+    }
+
+    a,
+    b,
+    c {
+        width: 60px;
+        height: 30px;
+        border-radius: 120px 120px 0 0;
+        border: 20px solid #D86F45;
+        border-bottom: 0;
+    }
+
+    a:before,
+    c:before {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #D86F45;
+    }
+
+    c:before {
+        left: -20px;
+    }
+
+    a {
+        transform: rotateZ(180deg) translate(-20px, -25px)
+    }
+
+    b {
+        transform: translateY(-25px);
+    }
+
+    c {
+        transform: rotateZ(180deg) translate(20px, -25px)
+    }
+</style>
